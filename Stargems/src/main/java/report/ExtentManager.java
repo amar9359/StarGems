@@ -23,7 +23,8 @@ public class ExtentManager {
 		String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
 		String repName = "Test-Report " + timeStamp + ".html";
 		
-		ExtentSparkReporter sparkReporter = new ExtentSparkReporter("./Reports/" + repName);
+//		ExtentSparkReporter sparkReporter = new ExtentSparkReporter("./ExtentReport/" + repName);
+		ExtentSparkReporter sparkReporter = new ExtentSparkReporter("./ExtentReport/1");
 		sparkReporter.config().setDocumentTitle("WebAutomation");
 		sparkReporter.config().setReportName("OpenXcell Technolabs");
 		sparkReporter.config().setTheme(Theme.DARK);

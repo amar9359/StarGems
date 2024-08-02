@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testClass.Facebook">
+      <class name="testClass.VerifyForgotPasswordUrlTest">
         <methods>
-          <include name="Signup"/>
+          <include name="VerifyForgotPasswordUrlTestMethod"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- testClass.Facebook -->
+      </class> <!-- testClass.VerifyForgotPasswordUrlTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 
 public class TestBase {
@@ -15,7 +17,7 @@ public class TestBase {
 		ChromeOptions option = new ChromeOptions();
 		option.addArguments("--remote-allow-origins=*");
 		option.addArguments("--disable-notifications");
-//		WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver(option);
 		driver.get("https://stargems-frontend.apps.openxcell.dev/");
 		driver.manage().window().maximize();
